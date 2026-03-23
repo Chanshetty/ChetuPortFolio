@@ -1,4 +1,4 @@
-# 🚀 Laxman Chanshetty — Portfolio Website
+# 🚀 Basavachetan Chanshetty — Portfolio Website
 
 A professional, production-ready portfolio website for a Full Stack Developer at IBM.
 Built with **Node.js + Express + EJS** with a clean dark/blue theme.
