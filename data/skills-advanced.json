@@ -1,0 +1,339 @@
+{
+  "categories": [
+    {
+      "id": "wm-e2e",
+      "title": "webMethods End-to-End Monitoring",
+      "subtitle": "Enterprise Transaction Monitoring & Observability Platform",
+      "icon": "fas fa-chart-network",
+      "iconFallback": "fas fa-project-diagram",
+      "color": "#0f62fe",
+      "colorLight": "rgba(15,98,254,0.12)",
+      "colorBorder": "rgba(15,98,254,0.35)",
+      "subcategories": [
+        {
+          "id": "wm-e2e-arch",
+          "title": "Monitoring Architecture",
+          "icon": "fas fa-sitemap",
+          "skills": [
+            {
+              "name": "Distributed Monitoring Systems",
+              "explanation": "Designed and maintained distributed monitoring architectures spanning multiple webMethods Integration Server nodes and microservices. Implemented centralized log aggregation and metric collection across geographically distributed environments, ensuring unified observability with minimal latency overhead."
+            },
+            {
+              "name": "Monitoring Agents & Collectors",
+              "explanation": "Configured lightweight monitoring agents deployed alongside Integration Server instances to capture runtime metrics, thread dumps, and service invocation data. Tuned agent polling intervals and buffer sizes to balance observability granularity against system performance impact."
+            },
+            {
+              "name": "Telemetry Ingestion Pipelines",
+              "explanation": "Built high-throughput telemetry ingestion pipelines using Node.js and Elasticsearch to process millions of trace events per day. Implemented backpressure handling, batching strategies, and dead-letter queues to ensure zero data loss under peak load conditions."
+            },
+            {
+              "name": "SLA Baseline Configuration",
+              "explanation": "Established SLA baselines by analyzing historical transaction performance data across business-critical integration flows. Configured dynamic thresholds that adapt to time-of-day traffic patterns, reducing false-positive alerts by over 60% compared to static threshold approaches."
+            },
+            {
+              "name": "Multi-Product Monitoring Integration",
+              "explanation": "Integrated monitoring data from webMethods Integration Server, API Gateway, Trading Networks, and third-party systems into a unified observability dashboard. Normalized heterogeneous metric formats into a common schema to enable cross-product correlation and root cause analysis."
+            }
+          ]
+        },
+        {
+          "id": "wm-e2e-trace",
+          "title": "Transaction & Trace Management",
+          "icon": "fas fa-route",
+          "skills": [
+            {
+              "name": "End-to-End Transaction Tracing",
+              "explanation": "Implemented end-to-end transaction tracing across multi-hop integration flows, correlating events from API Gateway ingress through Integration Server processing to backend system responses. Enabled operations teams to reconstruct complete transaction journeys within seconds of an incident."
+            },
+            {
+              "name": "Service Invocation Tracking",
+              "explanation": "Instrumented webMethods Flow Services and Java services to capture invocation metadata including caller identity, input/output payload sizes, execution duration, and exception details. This data feeds real-time dashboards and post-incident forensic analysis workflows."
+            },
+            {
+              "name": "Topology Visualization",
+              "explanation": "Built dynamic service topology maps in Angular that render live dependency graphs between integration services, external APIs, and databases. Nodes are color-coded by health status, enabling rapid identification of degraded components within complex integration landscapes."
+            },
+            {
+              "name": "Error Rate Monitoring",
+              "explanation": "Implemented sliding-window error rate calculations using Elasticsearch aggregations, tracking error percentages per service, per business domain, and per trading partner. Automated anomaly detection flags statistically significant deviations from baseline error rates."
+            },
+            {
+              "name": "Latency Breakdown Analysis",
+              "explanation": "Decomposed end-to-end transaction latency into constituent segments: network transit time, Integration Server processing time, RPC call duration, and database query time. This granular breakdown reduced mean time to diagnosis (MTTD) for performance incidents by approximately 45%."
+            },
+            {
+              "name": "Correlation ID Tracking",
+              "explanation": "Designed and enforced a correlation ID propagation strategy across all integration touchpoints, ensuring that a single business transaction can be traced across dozens of service hops, log files, and monitoring systems using a consistent unique identifier."
+            },
+            {
+              "name": "Trace Log Analysis",
+              "explanation": "Developed automated trace log parsing pipelines that extract structured data from webMethods server logs, index them into Elasticsearch, and surface actionable insights through Kibana dashboards and custom Angular UI components for operations and support teams."
+            }
+          ]
+        },
+        {
+          "id": "wm-e2e-alert",
+          "title": "Alerting & Rule Engine",
+          "icon": "fas fa-bell",
+          "skills": [
+            {
+              "name": "Rule-Based Violation Detection",
+              "explanation": "Built a configurable rule engine that evaluates incoming metric streams against user-defined conditions including threshold breaches, rate-of-change anomalies, and composite multi-metric rules. Rules are stored as JSON configurations, enabling non-developer operations staff to manage alert policies without code deployments."
+            },
+            {
+              "name": "Threshold Configuration",
+              "explanation": "Implemented a threshold management system supporting static, dynamic, and percentile-based thresholds. Dynamic thresholds leverage rolling statistical baselines computed from 7-day historical data, automatically adjusting for business cycle patterns such as end-of-month batch processing spikes."
+            },
+            {
+              "name": "Event-Driven Alert Pipeline",
+              "explanation": "Architected an event-driven alerting pipeline using Node.js event emitters and message queuing to decouple metric evaluation from notification delivery. This design ensures alert processing continues uninterrupted even when downstream notification channels experience transient failures."
+            },
+            {
+              "name": "Email & UI Notifications",
+              "explanation": "Implemented multi-channel notification delivery supporting HTML email alerts with embedded metric charts and in-application UI notifications with real-time badge counts. Notification templates are configurable per alert rule, allowing teams to tailor message content to their operational workflows."
+            },
+            {
+              "name": "Slack & Webhook Integrations",
+              "explanation": "Integrated the alert engine with Slack Bot API and generic webhook endpoints, enabling alerts to be routed to team-specific Slack channels with rich message formatting including severity indicators, affected service details, and direct links to the monitoring dashboard for immediate investigation."
+            }
+          ]
+        },
+        {
+          "id": "wm-e2e-kpi",
+          "title": "KPI & Analytics",
+          "icon": "fas fa-chart-bar",
+          "skills": [
+            {
+              "name": "KPI Dashboard Design",
+              "explanation": "Designed executive and operational KPI dashboards in Angular using IBM Carbon Design System components. Dashboards surface real-time and historical metrics including transaction success rates, average processing times, SLA compliance percentages, and system availability, tailored to different stakeholder audiences."
+            },
+            {
+              "name": "Time-Series Performance Metrics",
+              "explanation": "Implemented time-series metric storage and retrieval using Elasticsearch date histogram aggregations, enabling efficient querying of performance trends across configurable time windows from 15-minute operational views to 90-day capacity planning reports."
+            },
+            {
+              "name": "Response Time Trend Analysis",
+              "explanation": "Built automated trend analysis that applies linear regression to response time data, projecting future performance trajectories and flagging services where degradation trends indicate imminent SLA breaches before they occur, enabling proactive remediation."
+            },
+            {
+              "name": "Bottleneck Identification",
+              "explanation": "Developed bottleneck identification algorithms that analyze transaction trace data to pinpoint the highest-latency segments within integration flows. Results are surfaced as ranked bottleneck reports, directing engineering effort to the highest-impact optimization opportunities."
+            },
+            {
+              "name": "Error Pattern Analytics",
+              "explanation": "Implemented error pattern clustering using Elasticsearch aggregations to group similar error messages and stack traces, revealing systemic failure patterns that individual error alerts would miss. This capability reduced repeat incident investigation time by enabling pattern-based root cause identification."
+            }
+          ]
+        },
+        {
+          "id": "wm-e2e-integration",
+          "title": "Integration & Enterprise Connectivity",
+          "icon": "fas fa-network-wired",
+          "skills": [
+            {
+              "name": "API Monitoring",
+              "explanation": "Implemented comprehensive API monitoring covering request/response payload logging, latency tracking, error rate calculation, and consumer identity attribution for APIs exposed through webMethods API Gateway. Monitoring data feeds both real-time operational dashboards and monthly API usage reports."
+            },
+            {
+              "name": "Integration Server Monitoring",
+              "explanation": "Deployed deep monitoring instrumentation for webMethods Integration Server, capturing service execution statistics, thread pool utilization, connection pool health, and document store metrics. This data enables capacity planning and early detection of resource exhaustion conditions."
+            },
+            {
+              "name": "Cross-Product Observability",
+              "explanation": "Established cross-product observability by correlating monitoring data from webMethods Integration Server, API Gateway, Trading Networks, and OneData into unified transaction views. This capability is critical for diagnosing failures in complex B2B integration scenarios involving multiple webMethods components."
+            },
+            {
+              "name": "Elasticsearch Query Optimization",
+              "explanation": "Optimized Elasticsearch queries for monitoring data retrieval, implementing index lifecycle management, shard allocation strategies, and query result caching. Achieved sub-200ms query response times for dashboard data retrieval against indices containing billions of monitoring events."
+            },
+            {
+              "name": "GraphQL Data Fetchers",
+              "explanation": "Implemented GraphQL resolvers and data fetchers that aggregate monitoring data from multiple Elasticsearch indices and REST APIs into unified query responses. GraphQL's flexible query model allows frontend dashboards to retrieve precisely the data they need, reducing over-fetching and improving dashboard load performance."
+            }
+          ]
+        },
+        {
+          "id": "wm-e2e-backend",
+          "title": "Backend & Technical Stack",
+          "icon": "fas fa-server",
+          "skills": [
+            {
+              "name": "Java-Based Backend Services",
+              "explanation": "Developed core monitoring backend services in Java using Spring Boot, implementing RESTful APIs for metric ingestion, alert management, and dashboard data retrieval. Applied clean architecture principles with clear separation between domain logic, application services, and infrastructure adapters."
+            },
+            {
+              "name": "Node.js Monitoring APIs",
+              "explanation": "Built high-performance Node.js APIs for real-time metric streaming and alert notification delivery, leveraging Node's non-blocking I/O model to handle thousands of concurrent monitoring data streams with minimal resource consumption."
+            },
+            {
+              "name": "Angular UI Dashboards",
+              "explanation": "Developed responsive Angular monitoring dashboards using IBM Carbon Design System, implementing reactive data flows with RxJS observables for real-time metric updates, lazy-loaded dashboard modules for performance, and role-based UI rendering for different user personas."
+            },
+            {
+              "name": "Elasticsearch Indexing Strategy",
+              "explanation": "Designed Elasticsearch index templates, mapping configurations, and index lifecycle management policies for monitoring data. Implemented time-based index rollover, hot-warm-cold data tiering, and custom analyzers for log message tokenization to optimize both ingestion throughput and query performance."
+            },
+            {
+              "name": "Docker Deployment",
+              "explanation": "Containerized monitoring platform components using Docker, defining multi-stage Dockerfiles for optimized production images. Implemented Docker Compose configurations for local development environments and contributed to Kubernetes deployment manifests for production cluster deployments."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wm-onedata",
+      "title": "webMethods OneData (MDM Platform)",
+      "subtitle": "Master Data Management, Governance & Data Quality",
+      "icon": "fas fa-database",
+      "color": "#6929c4",
+      "colorLight": "rgba(105,41,196,0.12)",
+      "colorBorder": "rgba(105,41,196,0.35)",
+      "subcategories": [
+        {
+          "id": "wm-od-arch",
+          "title": "Master Data Architecture",
+          "icon": "fas fa-layer-group",
+          "skills": [
+            {
+              "name": "Centralized MDM Architecture",
+              "explanation": "Implemented centralized MDM architecture using webMethods OneData as the authoritative system of record for enterprise master data domains including customer, product, and supplier data. Designed data hub patterns where all consuming systems subscribe to golden record updates via event-driven integration flows."
+            },
+            {
+              "name": "Hybrid MDM Implementation",
+              "explanation": "Configured hybrid MDM deployment patterns in OneData that combine centralized governance with federated data ownership, allowing business domains to maintain local data stewardship while enforcing enterprise-wide data standards and cross-domain consistency rules."
+            },
+            {
+              "name": "Domain-Based Data Modeling",
+              "explanation": "Designed master data domain models in webMethods OneData defining entity types, attribute schemas, relationship hierarchies, and cross-domain reference data linkages. Applied industry-standard MDM modeling patterns to ensure data models support both operational and analytical consumption patterns."
+            },
+            {
+              "name": "Entity Relationship Configuration",
+              "explanation": "Configured complex entity relationship structures in OneData including parent-child hierarchies, many-to-many associations, and cross-domain reference links. Implemented relationship integrity constraints and cascade rules to maintain referential consistency across the master data repository."
+            }
+          ]
+        },
+        {
+          "id": "wm-od-meta",
+          "title": "Metadata & Governance",
+          "icon": "fas fa-tags",
+          "skills": [
+            {
+              "name": "Metadata Repository Management",
+              "explanation": "Managed the OneData metadata repository defining business glossary terms, data element definitions, ownership assignments, and data classification tags. Maintained metadata lineage documentation linking physical data attributes to business concepts, supporting data governance and regulatory compliance requirements."
+            },
+            {
+              "name": "Schema Configuration",
+              "explanation": "Configured OneData object schemas defining attribute data types, field-level validation rules, mandatory field constraints, and default value policies. Managed schema versioning and migration procedures to evolve data models without disrupting active integration consumers."
+            },
+            {
+              "name": "Audit Trail Tracking",
+              "explanation": "Leveraged OneData's built-in audit trail capabilities to capture complete change histories for master data records including who changed what, when, and from which system. Configured audit retention policies and implemented audit report extracts for regulatory compliance and data governance reviews."
+            },
+            {
+              "name": "Data Stewardship Tools",
+              "explanation": "Configured and administered OneData's data stewardship workbench, enabling business data stewards to review flagged data quality issues, approve or reject proposed record changes, and manage exception queues. Trained stewardship teams on workflow navigation and escalation procedures."
+            }
+          ]
+        },
+        {
+          "id": "wm-od-lifecycle",
+          "title": "Data Lifecycle & Workflows",
+          "icon": "fas fa-sync-alt",
+          "skills": [
+            {
+              "name": "Record Lifecycle Management",
+              "explanation": "Implemented master data record lifecycle management in OneData covering record creation, active management, deprecation, and archival states. Configured lifecycle transition rules and automated triggers that enforce business policies such as mandatory review periods before record activation."
+            },
+            {
+              "name": "Approval Workflow Routing",
+              "explanation": "Designed multi-stage approval workflows in OneData that route proposed master data changes through configurable reviewer chains based on data domain, change type, and business impact classification. Implemented escalation rules for stalled approvals and SLA-based reminder notifications."
+            },
+            {
+              "name": "Version Control of Master Data",
+              "explanation": "Utilized OneData's record versioning capabilities to maintain complete historical snapshots of master data records at each approved change event. Implemented version comparison tooling enabling data stewards and auditors to review the evolution of critical master data attributes over time."
+            },
+            {
+              "name": "Change Management Hooks",
+              "explanation": "Implemented OneData change event hooks that trigger downstream integration flows upon master data record approval, propagating golden record updates to consuming systems including ERP, CRM, and data warehouse platforms via webMethods Integration Server publish-subscribe flows."
+            }
+          ]
+        },
+        {
+          "id": "wm-od-integration",
+          "title": "Integration & Data Interchange",
+          "icon": "fas fa-exchange-alt",
+          "skills": [
+            {
+              "name": "REST-Based Data Services",
+              "explanation": "Consumed and extended OneData's REST API services to enable programmatic master data access from integration flows and external applications. Implemented OAuth-secured API wrappers that abstract OneData's API versioning from consuming applications, simplifying upgrade management."
+            },
+            {
+              "name": "JSON Schema Integration",
+              "explanation": "Defined JSON schemas for OneData master data payloads exchanged with downstream systems, enforcing structural and semantic validation at integration boundaries. Maintained schema registries to manage schema evolution and ensure backward compatibility for active integration consumers."
+            },
+            {
+              "name": "Data Import/Export Pipelines",
+              "explanation": "Built automated data import pipelines using webMethods Integration Server to ingest master data from source systems into OneData, applying transformation, enrichment, and pre-validation logic before submission. Implemented export pipelines for bulk data extracts supporting data warehouse loads and regulatory reporting."
+            },
+            {
+              "name": "SAP/ERP Integration",
+              "explanation": "Implemented bidirectional master data synchronization between webMethods OneData and SAP ERP using webMethods Integration Server adapters. Designed conflict resolution logic for scenarios where both systems may independently update the same master data entity."
+            },
+            {
+              "name": "External System Synchronization",
+              "explanation": "Designed event-driven master data synchronization patterns that propagate OneData golden record updates to multiple downstream systems in near real-time. Implemented idempotent update handlers and sequence tracking to ensure eventual consistency across distributed system landscapes."
+            }
+          ]
+        },
+        {
+          "id": "wm-od-quality",
+          "title": "Data Quality & Validation",
+          "icon": "fas fa-check-double",
+          "skills": [
+            {
+              "name": "Data Cleansing APIs",
+              "explanation": "Integrated OneData's data cleansing capabilities with external reference data services to standardize address formats, normalize company name representations, and validate identifier formats against authoritative registries. Cleansing rules are applied both at data ingestion and during periodic data quality remediation cycles."
+            },
+            {
+              "name": "Duplicate Detection Rules",
+              "explanation": "Configured OneData's duplicate detection engine with domain-specific matching rules using weighted attribute scoring across name, address, identifier, and relationship attributes. Tuned match thresholds to balance duplicate detection sensitivity against false-positive merge rates for each master data domain."
+            },
+            {
+              "name": "Matching & Merge Logic",
+              "explanation": "Implemented survivorship rules in OneData's merge logic that determine which attribute values from duplicate candidate records are promoted to the golden record. Rules incorporate source system trust rankings, data recency, and completeness scores to produce the highest-quality merged record."
+            },
+            {
+              "name": "Validation Policies",
+              "explanation": "Defined comprehensive validation policy sets in OneData covering mandatory field completeness, referential integrity against reference data domains, format pattern validation, and cross-attribute business rule validation. Validation failures are routed to stewardship queues for human review rather than silently rejected."
+            }
+          ]
+        },
+        {
+          "id": "wm-od-security",
+          "title": "Security & Administration",
+          "icon": "fas fa-shield-alt",
+          "skills": [
+            {
+              "name": "Role-Based Access Control",
+              "explanation": "Configured OneData's role-based access control model defining granular permissions at the object type, record, and attribute levels. Implemented role hierarchies aligned with organizational data ownership structures, ensuring data stewards can only access and modify records within their assigned business domains."
+            },
+            {
+              "name": "Data Access Policies",
+              "explanation": "Implemented data access policies in OneData that enforce row-level and column-level security based on user role, data classification, and business domain ownership. Sensitive attributes such as financial identifiers and personal data are masked or restricted for users without explicit access grants."
+            },
+            {
+              "name": "Environment Configuration",
+              "explanation": "Managed OneData environment configurations across development, testing, staging, and production tiers, implementing configuration management practices to ensure consistent object schema definitions, workflow configurations, and integration endpoint settings across all environments."
+            },
+            {
+              "name": "Multi-Tenant Data Management",
+              "explanation": "Configured OneData's multi-tenancy capabilities to support multiple business units sharing a common MDM platform while maintaining strict data isolation. Implemented tenant-specific data models, workflow configurations, and access policies that allow each business unit to operate independently within shared infrastructure."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

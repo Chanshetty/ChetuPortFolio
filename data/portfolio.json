@@ -1,0 +1,230 @@
+
+{
+  "owner": {
+    "name": "Basavachetan Chanshetty",
+    "role": "Full Stack Developer",
+    "tagline": "Building scalable enterprise solutions at IBM",
+    "experience": "3",
+    "company": "IBM",
+    "location": "Bangalore, India",
+    "hometown": "Sangolgi, Bidar, Karnataka",
+    "email": "chanshetty2426@gmail.com",
+    "phone": "+91 9632502052",
+    "phone2": "+91 9482828693",
+    "linkedin": "https://www.linkedin.com/in/basavachetanchanshetty",
+    "github": "https://github.com/basavachetan",
+    "resumeLink": "#",
+    "about": "I'm a passionate Full Stack Developer with 3 years of experience at IBM, specializing in building enterprise-grade applications. I work across the full stack — from crafting responsive Angular UIs to designing robust Node.js and Spring Boot backends. I have deep hands-on experience with webMethods Integration Server, webMethods OneData, and End-to-End Monitoring platforms, along with Elasticsearch, Docker, and AI-powered tools using Watsonx.ai. A Triple Gold Medalist from VTU (Best Academic Outcome 2018–2022, Best Project, and Highest CGPA), I thrive in agile environments and love solving complex integration and monitoring challenges with clean, maintainable code.",
+    "heroGreeting": "Hi, I'm"
+  },
+  "skills": [
+    {
+      "category": "Languages",
+      "icon": "fas fa-code",
+      "items": [
+        { "name": "Java",       "level": 85 },
+        { "name": "JavaScript", "level": 90 },
+        { "name": "TypeScript", "level": 80 },
+        { "name": "SQL",        "level": 75 }
+      ]
+    },
+    {
+      "category": "Frontend",
+      "icon": "fas fa-desktop",
+      "items": [  
+        { "name": "Angular",                  "level": 88 },
+        { "name": "HTML5 / CSS3",             "level": 92 },
+        { "name": "Bootstrap",                "level": 80 },
+        { "name": "IBM Carbon Design System", "level": 75 }
+      ]
+    },
+    {
+      "category": "Backend",
+      "icon": "fas fa-server",
+      "items": [
+        { "name": "Node.js",     "level": 88 },
+        { "name": "Express",     "level": 85 },
+        { "name": "Spring Boot", "level": 78 }
+      ]
+    },
+    {
+      "category": "Database",
+      "icon": "fas fa-database",
+      "items": [
+        { "name": "MySQL",         "level": 80 },
+        { "name": "MongoDB",       "level": 75 },
+        { "name": "Elasticsearch", "level": 82 }
+      ]
+    },
+    {
+      "category": "DevOps & Tools",
+      "icon": "fas fa-tools",
+      "items": [
+        { "name": "Docker",    "level": 72 },
+        { "name": "Git",       "level": 90 },
+        { "name": "Bitbucket", "level": 80 },
+        { "name": "VS Code",   "level": 95 }
+      ]
+    },
+    {
+      "category": "webMethods & Integration",
+      "icon": "fas fa-network-wired",
+      "items": [
+        { "name": "webMethods Integration Server", "level": 82 },
+        { "name": "webMethods OneData",            "level": 78 },
+        { "name": "webMethods E2E Monitoring",     "level": 85 },
+        { "name": "webMethods API Gateway",        "level": 75 },
+        { "name": "webMethods Flow Services",      "level": 80 },
+        { "name": "webMethods Trading Networks",   "level": 70 }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "webMethods End-to-End Monitoring",
+      "description": "Enterprise observability platform for distributed transaction tracing, real-time alerting, KPI dashboards, and multi-product integration monitoring across webMethods Integration Server, API Gateway, and Trading Networks.",
+      "role": "Full Stack Developer",
+      "tech": ["Java", "Spring Boot", "Elasticsearch", "Angular", "Node.js", "Docker"],
+      "icon": "fas fa-project-diagram",
+      "color": "#0f62fe",
+      "type": "skills-showcase",
+      "skillsCategory": "wm-e2e",
+      "highlights": [
+        "Distributed transaction tracing across multi-hop integration flows",
+        "Rule-based alert engine with Slack & Email notifications",
+        "KPI dashboards with time-series analytics in Angular",
+        "Elasticsearch-powered trace log analysis at scale"
+      ],
+      "skillsLink": "/skills#wm-e2e",
+      "github": "#",
+      "demo": "/skills"
+    },
+    {
+      "id": 2,
+      "title": "webMethods OneData (MDM Platform)",
+      "description": "Master Data Management platform implementation covering centralized MDM architecture, data governance workflows, quality validation, SAP/ERP integration, and role-based access control for enterprise data domains.",
+      "role": "Full Stack Developer",
+      "tech": ["webMethods OneData", "REST APIs", "SAP Integration", "Angular", "Node.js"],
+      "icon": "fas fa-database",
+      "color": "#6929c4",
+      "type": "skills-showcase",
+      "skillsCategory": "wm-onedata",
+      "highlights": [
+        "Centralized MDM architecture with approval workflow routing",
+        "Duplicate detection, matching & merge logic",
+        "SAP/ERP bidirectional master data synchronization",
+        "Role-based access control with multi-tenant data isolation"
+      ],
+      "skillsLink": "/skills#wm-onedata",
+      "github": "#",
+      "demo": "/skills"
+    },
+    {
+      "id": 3,
+      "title": "AI Trace Summarization Tool",
+      "description": "AI-powered tool that summarizes complex distributed trace JSON data using Large Language Models via IBM Watsonx.ai, reducing debugging time significantly.",
+      "role": "AI Developer",
+      "tech": ["Node.js", "Python", "Watsonx.ai", "LLM"],
+      "icon": "fas fa-brain",
+      "color": "#6929c4",
+      "type": "standard",
+      "highlights": [
+        "Integrated IBM Watsonx.ai LLM APIs",
+        "Built Python preprocessing pipeline for trace data",
+        "Reduced mean time to resolution by 40%",
+        "Designed intuitive summary UI in Angular"
+      ],
+      "github": "#",
+      "demo": "#"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "IBM",
+      "logo": "IBM",
+      "role": "Full Stack Developer",
+      "duration": "2023 – Present",
+      "location": "Bangalore, India",
+      "type": "Full-time",
+      "responsibilities": [
+        "Developed scalable backend APIs using Node.js, Express, and Spring Boot",
+        "Built responsive and accessible Angular UI components using IBM Carbon Design System",
+        "Worked extensively with webMethods Integration Server for enterprise service integration",
+        "Implemented and maintained webMethods End-to-End (E2E) Monitoring for transaction tracing",
+        "Used webMethods OneData for master data management and data governance workflows",
+        "Integrated and optimized Elasticsearch queries for high-volume transaction data",
+        "Implemented Slack and Email notification systems for real-time alerting",
+        "Collaborated in Agile sprints, code reviews, and technical design discussions",
+        "Containerized services using Docker for consistent deployment environments"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "degree": "Bachelor of Engineering (B.E.)",
+      "field": "Engineering",
+      "university": "Visvesvaraya Technological University (VTU)",
+      "college": "PDA College of Engineering, Kalaburgi",
+      "year": "2018 – 2022",
+      "grade": "9.06 CGPA",
+      "achievement": "🥇 Gold Medalist – Highest CGPA among all B.E. students (2018–2022)",
+      "icon": "fas fa-graduation-cap",
+      "medals": [
+        {
+          "title": "Gold Medal – Best Academic Outcome",
+          "description": "Awarded Gold Medal for Best Academic Outcome across the entire B.E. batch of 2018–2022 at PDA College of Engineering, Kalaburgi under VTU.",
+          "icon": "fas fa-medal",
+          "color": "#f1c21b"
+        },
+        {
+          "title": "Gold Medal – Best Project",
+          "description": "Awarded Gold Medal for Best Final Year Project among all B.E. Engineering students, recognized for outstanding innovation and technical execution.",
+          "icon": "fas fa-trophy",
+          "color": "#f1c21b"
+        },
+        {
+          "title": "Gold Medal – Highest CGPA",
+          "description": "Awarded Gold Medal for achieving the Highest CGPA (9.06) among all successful B.E. Engineering students of the 2018–2022 batch at VTU.",
+          "icon": "fas fa-award",
+          "color": "#f1c21b"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "degree": "Pre-University (P.U.C)",
+      "field": "Science",
+      "university": "State Board, Karnataka",
+      "college": "Dr. C B Gurkul Kardyal Bhalki",
+      "year": "2015 – 2017",
+      "grade": "84.64%",
+      "achievement": "",
+      "icon": "fas fa-school"
+    },
+    {
+      "id": 3,
+      "degree": "10th Standard (SSLC)",
+      "field": "",
+      "university": "State Board, Karnataka",
+      "college": "Govt. High School, Sangolgi",
+      "year": "2015",
+      "grade": "84.64%",
+      "achievement": "",
+      "icon": "fas fa-book"
+    }
+  ],
+  "stats": [
+    { "label": "Years Experience",   "value": "3+",  "icon": "fas fa-briefcase"   },
+    { "label": "Projects Delivered", "value": "10+", "icon": "fas fa-rocket"      },
+    { "label": "Technologies",       "value": "20+", "icon": "fas fa-layer-group" },
+    { "label": "Gold Medals",        "value": "3",   "icon": "fas fa-medal"       }
+  ],
+  "seo": {
+    "title": "Basavachetan Chanshetty | Full Stack Developer at IBM",
+    "description": "Portfolio of Basavachetan Chanshetty, a Gold Medalist Full Stack Developer at IBM with 3 years of experience in Angular, Node.js, Spring Boot, webMethods, Elasticsearch, and AI tools.",
+    "keywords": "Basavachetan Chanshetty, Full Stack Developer, IBM, Angular, Node.js, Spring Boot, Elasticsearch, Watsonx, webMethods, webMethods OneData, webMethods E2E Monitoring, webMethods Integration Server, Bangalore, VTU Gold Medalist"
+  }
+}

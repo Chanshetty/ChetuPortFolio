@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enterprise Skills | Laxman Chanshetty</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="/css/skills-advanced.css" />
+</head>
+<body>
+
+  <!-- ── Back to Portfolio ──────────────────────────────────────────────── -->
+  <a href="/" class="back-link">
+    <i class="fas fa-arrow-left"></i> Back to Portfolio
+  </a>
+
+  <!-- ══════════════════════════════════════════════════════════════════════
+       SKILLS SECTION
+  ══════════════════════════════════════════════════════════════════════════ -->
+  <section class="skills-section" id="skills">
+    <div class="skills-container">
+
+      <!-- Section Header -->
+      <div class="skills-header">
+        <span class="skills-tag">Enterprise Expertise</span>
+        <h1 class="skills-title">
+          Specialized <span class="highlight">Skills</span>
+        </h1>
+        <p class="skills-subtitle">
+          Deep enterprise-level expertise in webMethods platform products —
+          built through 3 years of hands-on production experience at IBM.
+        </p>
+        <div class="skills-line"></div>
+      </div>
+
+      <!-- Skills Categories will be injected here by JS -->
+      <div class="skills-categories" id="skillsRoot"></div>
+
+    </div>
+  </section>
+
+  <!-- ── Skill Explanation Modal ────────────────────────────────────────── -->
+  <div class="skill-modal-overlay" id="skillModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalSkillName">
+    <div class="skill-modal" id="skillModal">
+      <button class="modal-close" id="modalClose" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-icon-wrap" id="modalIconWrap">
+        <i class="fas fa-cog" id="modalIcon"></i>
+      </div>
+      <div class="modal-category-badge" id="modalCategoryBadge"></div>
+      <h3 class="modal-skill-name" id="modalSkillName"></h3>
+      <div class="modal-divider"></div>
+      <p class="modal-explanation" id="modalExplanation"></p>
+      <button class="modal-dismiss btn-primary-sm" id="modalDismiss">
+        <i class="fas fa-check"></i> Got it
+      </button>
+    </div>
+  </div>
+
+  <script src="/js/skills-advanced.js"></script>
+</body>
+</html>

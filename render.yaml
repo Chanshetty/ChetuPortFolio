@@ -1,0 +1,20 @@
+# ─────────────────────────────────────────────────────────────
+# Render Deployment Configuration
+# Deploy at: https://render.com
+# ─────────────────────────────────────────────────────────────
+
+services:
+  - type: web
+    name: laxman-portfolio
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+
+# Made with Bob
